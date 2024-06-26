@@ -1,46 +1,36 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void draw_board(char one, char two, char three,
-                char four, char five, char six,
-                char seven, char eight, char nine){
+#define SIZE 3
+
+void draw_board(char board[SIZE][SIZE]){
+    int i;
+    int j;
     system("clear");
-    printf(" %c | %c | %c \n"
-           " %c | %c | %c \n"
-           " %c | %c | %c \n",
-           one, two, three,
-           four, five, six,
-           seven, eight, nine);
+
+    for (i = 0; i < SIZE; i++){
+        for (j = 0; j < SIZE; j++){
+            printf("| %c |", board[i][j]);
+        }
+        printf("\n");
+    }
+
 }
 
 int main(void) {
     int running;
     int turn; // 0 = X, 1 = O
     int c;
-    char one;
-    char two;
-    char three;
-    char four;
-    char five;
-    char six;
-    char seven;
-    char eight;
-    char nine;
-
-    one = '1';
-    two = '2';
-    three = '3';
-    four = '4';
-    five = '5';
-    six = '6';
-    seven = '7';
-    eight = '8';
-    nine = '9';
+    char board[SIZE][SIZE] = {{'1','2','3'},
+                        {'4','5','6'},
+                        {'7','8','9'}};
 
     running = 1;
     turn = 0;
 
     while(running){
+        if (c == '\n')
+            goto skip;
         printf("Choose Your Position!\n");
 
         if (turn)
@@ -48,8 +38,9 @@ int main(void) {
         else
             printf("Player X's turn!\n");
 
-        draw_board(one, two, three, four, five, six, seven, eight, nine);
+        draw_board(board);
         // TODO: Get rid of reading newline, causing second loop
+        skip:
         c = getchar();
         if (c >= '0' && c <= '9' || c == 'q') {
             switch (c) {
@@ -57,27 +48,27 @@ int main(void) {
                     goto exit;
                 case ('1'):
                     if (turn)
-                        one = 'O';
+                        board[0][0] = 'O';
                     else
-                        one = 'X';
+                        board[0][0] = 'X';
                     break;
                 case ('2'):
                     if (turn)
-                        two = 'O';
+                        board[0][1] = 'O';
                     else
-                        two = 'X';
+                        board[0][1] = 'X';
                     break;
                 case ('3'):
                     if (turn)
-                        three = 'O';
+                        board[0][2] = 'O';
                     else
-                        three = 'X';
+                        board[0][2] = 'X';
                     break;
                 case ('4'):
                     if (turn)
-                        four = 'O';
+                        board[1][0] = 'O';
                     else
-                        four = 'X';
+                        board[1][0] = 'X';
                     break;
                 default:
                     break;
