@@ -29,6 +29,11 @@ int main(void) {
     turn = 0;
 
     while(running){
+        if(board[0][0] == board[0][1] == board[0][2])
+        {
+            printf("Winner! %c Wins!", board[0][0]);
+            return 0;
+        }
         if (c == '\n')
             goto skip;
         printf("Choose Your Position!\n");
@@ -39,13 +44,12 @@ int main(void) {
             printf("Player X's turn!\n");
 
         draw_board(board);
-        // TODO: Get rid of reading newline, causing second loop
         skip:
         c = getchar();
         if (c >= '0' && c <= '9' || c == 'q') {
             switch (c) {
                 case ('q'):
-                    goto exit;
+                    return 0;
                 case ('1'):
                     if (turn)
                         board[0][0] = 'O';
@@ -70,15 +74,44 @@ int main(void) {
                     else
                         board[1][0] = 'X';
                     break;
+                case ('5'):
+                    if(turn)
+                        board[1][1] = 'O';
+                    else
+                        board[1][1] = 'X';
+                case('6'):
+                    if(turn)
+                        board[1][2] = 'O';
+                    else
+                        board[1][2] = 'X';
+                    break;
+                case('7'):
+                    if(turn)
+                        board[2][0] = 'O';
+                    else
+                        board[2][0] = 'X';
+                    break;
+                case('8'):
+                    if(turn)
+                        board[2][1] = 'O';
+                    else
+                        board[2][1] = 'X';
+                    break;
+                case('9'):
+                    if(turn)
+                        board[2][2] = 'O';
+                    else
+                        board[2][2] = 'X';
+                    break;
                 default:
                     break;
             }
+
             if (turn == 1)
                 turn = 0;
             else
                 turn = 1;
         }
     }
-    exit:
     return 0;
 }
