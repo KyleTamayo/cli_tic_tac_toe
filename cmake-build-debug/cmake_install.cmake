@@ -1,4 +1,4 @@
-# Install script for directory: /home/kyle/Workspace/git/cli_tic_tac_toe
+# Install script for directory: /home/kyle/CLionProjects/cli_tic_tac_toe
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/kyle/Workspace/git/cli_tic_tac_toe/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/kyle/CLionProjects/cli_tic_tac_toe/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

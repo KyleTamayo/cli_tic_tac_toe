@@ -18,15 +18,13 @@ void draw_board(char board[SIZE][SIZE]){
 }
 
 int main(void) {
-    int running;
-    int turn; // 0 = X, 1 = O
-    int c;
+    int c = 0;
+    int running = 1;
+    int turn = 0;
     char board[SIZE][SIZE] = {{'1','2','3'},
                         {'4','5','6'},
                         {'7','8','9'}};
 
-    running = 1;
-    turn = 0;
 
     while(running){
         if(board[0][0] == board[0][1] == board[0][2])
