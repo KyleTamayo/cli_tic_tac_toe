@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="cli_tic_tac_toe"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/kyle/CLionProjects/cli_tic_tac_toe/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/home/kyle/CLionProjects/cli_tic_tac_toe/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/home/kyle/CLionProjects/cli_tic_tac_toe/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/home/kyle/CLionProjects/cli_tic_tac_toe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/home/kyle/CLionProjects/cli_tic_tac_toe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cli_tic_tac_toe">
+				<Option output="/home/kyle/CLionProjects/cli_tic_tac_toe/cmake-build-debug/cli_tic_tac_toe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kyle/CLionProjects/cli_tic_tac_toe/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/14/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/home/kyle/CLionProjects/cli_tic_tac_toe/cmake-build-debug/Makefile&quot;  VERBOSE=1 cli_tic_tac_toe"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/home/kyle/CLionProjects/cli_tic_tac_toe/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/home/kyle/CLionProjects/cli_tic_tac_toe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/home/kyle/CLionProjects/cli_tic_tac_toe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cli_tic_tac_toe/fast">
+				<Option output="/home/kyle/CLionProjects/cli_tic_tac_toe/cmake-build-debug/cli_tic_tac_toe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kyle/CLionProjects/cli_tic_tac_toe/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/14/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/home/kyle/CLionProjects/cli_tic_tac_toe/cmake-build-debug/Makefile&quot;  VERBOSE=1 cli_tic_tac_toe/fast"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/home/kyle/CLionProjects/cli_tic_tac_toe/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/home/kyle/CLionProjects/cli_tic_tac_toe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/home/kyle/CLionProjects/cli_tic_tac_toe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/kyle/CLionProjects/cli_tic_tac_toe/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/home/kyle/CLionProjects/cli_tic_tac_toe/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/home/kyle/CLionProjects/cli_tic_tac_toe/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/home/kyle/CLionProjects/cli_tic_tac_toe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/home/kyle/CLionProjects/cli_tic_tac_toe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/kyle/CLionProjects/cli_tic_tac_toe/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/home/kyle/CLionProjects/cli_tic_tac_toe/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/home/kyle/CLionProjects/cli_tic_tac_toe/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/home/kyle/CLionProjects/cli_tic_tac_toe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/home/kyle/CLionProjects/cli_tic_tac_toe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/kyle/CLionProjects/cli_tic_tac_toe/main.c">
+			<Option target="cli_tic_tac_toe"/>
+		</Unit>
+		<Unit filename="/home/kyle/CLionProjects/cli_tic_tac_toe/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
